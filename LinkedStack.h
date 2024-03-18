@@ -13,6 +13,9 @@ public:
     int pop();
     int top();
 
+    void infixToPostfix(string infix);
+    int precedence(char c);
+
     void SwapTwoTop();
 
 };
