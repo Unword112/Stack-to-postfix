@@ -18,11 +18,11 @@ class LinkedList {
         void randList(int size);
         
         int size();
-        int indexOf(int e);
+        int indexOf(float e);
         int get(int i);
-        void set(int i, int e);
-        int remove(int i);
-        void add(int i, int e);
+        void set(int i, float e);
+        float remove(int i);
+        void add(int i, float e);
         void clear();
 
         bool isEmpty();

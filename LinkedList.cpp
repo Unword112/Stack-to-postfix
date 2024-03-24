@@ -28,7 +28,7 @@ int LinkedList::size()
     return curSize;
 }
 
-int LinkedList::indexOf(int e)
+int LinkedList::indexOf(float e)
 {
     ChainNode *p = firstNode->next;
     
@@ -56,7 +56,7 @@ int LinkedList::get(int i)
     return -1;
 }
 
-void LinkedList::set(int i, int e)
+void LinkedList::set(int i, float e)
 {
     ChainNode *p = firstNode->next;
 
@@ -72,7 +72,7 @@ void LinkedList::set(int i, int e)
     }
 }
 
-int LinkedList::remove(int i)
+float LinkedList::remove(int i)
 {
     ChainNode *p = firstNode;
 
@@ -81,7 +81,7 @@ int LinkedList::remove(int i)
     ChainNode *q = p->next;
     ChainNode *r = p->next->next;
 
-    int temp = q->element;
+    float temp = q->element;
     delete q;
     p->next = r;
     curSize--;
@@ -89,7 +89,7 @@ int LinkedList::remove(int i)
     return temp;
 }
 
-void LinkedList::add(int i, int e)
+void LinkedList::add(int i, float e)
 {
     ChainNode *p = firstNode;
     

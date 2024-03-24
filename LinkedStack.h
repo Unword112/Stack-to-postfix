@@ -9,12 +9,15 @@ public:
     LinkedStack();
     //~LinkedStack();
 
-    void push(int e);
-    int pop();
+    void push(float e);
+    float pop();
     int top();
 
-    void infixToPostfix(string infix);
+    string infixToPostfix(string infix);
     int precedence(char c);
+    float calPostfix(string postfix);
+
+    void check();
 
     void SwapTwoTop();
 

@@ -7,10 +7,10 @@ using namespace std;
 
 class ChainNode {
     public:
-        int element;
+        float element;
         ChainNode *next;
         
-        ChainNode(int e = 0, ChainNode *p = NULL);
+        ChainNode(float e = 0, ChainNode *p = NULL);
 };
 
 #endif
