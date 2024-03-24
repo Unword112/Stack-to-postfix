@@ -1,6 +1,7 @@
 #include <iostream>
 #include "LinkedStack.h"
 #include "math.h"
+#include <iomanip> 
 
 using namespace std;
 
@@ -10,9 +11,8 @@ int main() {
 
         LinkedStack stack;
 
-        stack.check();
-
-        string infix_1 = "2^(1+4/2)^2";
+        cout << fixed << setprecision(2);
+        string infix_1 = "2^((1+4/2)^2)";
         string infix_2 = "2^((1+4)/2)";
         cout << "Infix 1 : " << infix_1 << endl;
         cout << "Infix 2 : " << infix_2 << endl;

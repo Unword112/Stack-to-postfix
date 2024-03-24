@@ -89,30 +89,30 @@ float LinkedStack::calPostfix(string postfix) {
         char c = postfix[i];
         if (isdigit(c)) {
             push(c - '0');
-            display();
+            //display();
         } else {
             float operand2 = pop(); //2
             float operand1 = pop(); //2.5
             switch (c) {
                 case '+':
                     push(operand1 + operand2);
-                    display();
+                    //display();
                     break;
                 case '-':
                     push(operand1 - operand2);
-                    display();
+                    //display();
                     break;
                 case '*':
                     push(operand1 * operand2);
-                    display();
+                    //display();
                     break;
                 case '/':
                     push(operand1 / operand2);
-                    display();
+                    //display();
                     break;
                 case '^':
-                    push(pow(operand2, operand1));
-                    display();
+                    push(pow(operand1, operand2));
+                    //display();
                     break;
                 default : return -1;
             }

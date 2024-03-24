@@ -18,6 +18,7 @@ public:
     float calPostfix(string postfix);
 
     void check();
+    void strcheck(string p);
 
     void SwapTwoTop();
 
